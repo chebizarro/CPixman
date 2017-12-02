@@ -1,0 +1,5 @@
+module CPixman [system] {
+  header "/usr/include/pixman-1/pixman.h"
+  link "pixman"
+  export *
+}
