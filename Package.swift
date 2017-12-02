@@ -5,5 +5,17 @@ import PackageDescription
 
 let package = Package(
     name: "CPixman",
-    pkgConfig: "pixman-1",
+    providers: [
+        .brew(["pixman"]),
+        .apt(["libpixman-1-dev"])
+    ],
+    products: [
+        .library(
+            name: "CPixman",
+            targets: ["CPixman"]
+        )
+    ],
+    targets: [
+        .target(name: "CPixman")
+    ]
 )
