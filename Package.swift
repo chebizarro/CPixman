@@ -5,5 +5,5 @@ import PackageDescription
 
 let package = Package(
     name: "CPixman",
-    pkgConfig: "pixman-1"
+    pkgConfig: "pixman-1",
 )
